@@ -9,7 +9,6 @@ export class CrewComponent implements OnInit {
 
   inCrew: boolean = false;
   crew: object[] = [];
-  //consideredAstronaut: boolean = false;
 
   candidates: object[] = [
     {name: "Sally Ride", photo: 'https://handlers.education.launchcode.org/static/images/sally-ride.jpg'},
@@ -36,10 +35,4 @@ export class CrewComponent implements OnInit {
       this.crew.splice(this.crew.indexOf(candidate), 1);
     }
   }
-/*
-  consider(astronaut: object): void {
-    this.consideredAstronaut = astronaut;
-  }
-  */
-
 }
