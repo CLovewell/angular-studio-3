@@ -38,6 +38,7 @@ export class EquipmentComponent implements OnInit {
 
   canAdd(item: object): boolean {
     return (item['mass'] + this.cargoMass <= this.maximumAllowedMass)
-      && (this.cargoHold.length < this.maxItems);
+      && (this.cargoHold.length < this.maxItems)
+      && (this.cargoHold.indexOf(item) === -1);
   }
 }
